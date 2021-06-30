@@ -40,8 +40,8 @@
     </tr>
   </thead>
   <tbody>
-    <tr *ngFor="let product of products">
-      <td>{{product.id}}</td>
+    <tr *ngFor="let product of products; let i=index">
+      <td>{{i+1}}</td>
       <!-- <td><img [src]="product.img" width="50" /></td> -->
       <td>{{product.name}}</td>
       <td>{{product.price}}</td>
